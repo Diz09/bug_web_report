@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     try {
         const urlParams = new URLSearchParams(window.location.search);
         const idTransaksi = urlParams.get('id');
-        const apiUrl = `https://vioscakedb.000webhostapp.com/apidb/api_web/api_pesanan.php?action=rincian&id=${encodeURIComponent(idTransaksi)}`;
+        const apiUrl = `http://localhost:3000/apidb/api_web/api_pesanan.php?action=rincian&id=${encodeURIComponent(idTransaksi)}`;
 
         const response = await fetch(apiUrl, {
             method: 'POST',
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
                 async function ubahStatusPesanan(status) {
                     try {
-                        const apiUrl = 'https://vioscakedb.000webhostapp.com/apidb/api_web/api_pesanan.php?action=ubahStatus';
+                        const apiUrl = 'http://localhost:3000/apidb/api_web/api_pesanan.php?action=ubahStatus';
 
                         const response = await fetch(apiUrl, {
                             method: 'POST',

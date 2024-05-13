@@ -272,9 +272,23 @@
       }
 
       function logout() {
-        alert("Logout berhasil!");
-        window.location.href = "../../login-admin/login.php";
+        fetch('http://localhost:3000/apidb/api_web/api_user.php?action=logout')
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('Logout failed');
+              }
+              return response.json();
+          })
+          .then(data => {
+              alert("Logout berhasil!");
+              window.location.href = "../../login-admin/login.php";
+          })
+          .catch(error => {
+              console.error('Error fetching data:', error);
+              alert("Logout gagal! Silakan coba lagi.");
+          });
       }
+
 
       
     </script>

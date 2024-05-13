@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username   = "id21452276_vioscake1";
-$password   = "Slaoapwan211#@";
-$database   = "id21452276_vioscakedb"; //nama db
+$servername = "localhost"; // default localhost
+$username   = "root"; // default root
+$password   = ""; // default kosong
+$database   = "c_vios0"; //nama db
 
 $koneksi    = mysqli_connect($servername, $username, $password, $database);
 

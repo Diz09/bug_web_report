@@ -1,4 +1,4 @@
-fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_katalog.php?action=baseCake')
+fetch('http://localhost:3000/apidb/api_web/api_katalog.php?action=baseCake')
     .then(response => response.json())
     .then(data => {
         const tableBody = document.getElementById('dataBaseCake');
@@ -16,7 +16,7 @@ fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_katalog.php?action
     })
 .catch(error => console.error('Error fetching data:', error));
 
-fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_katalog.php?action=ukuranCake')
+fetch('http://localhost:3000/apidb/api_web/api_katalog.php?action=ukuranCake')
     .then(response => response.json())
     .then(data => {
         const tableBody = document.getElementById('dataUkuranCake');
@@ -35,7 +35,7 @@ fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_katalog.php?action
 .catch(error => console.error('Error fetching data:', error));
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_katalog.php?action=priceList')
+    fetch('http://localhost:3000/apidb/api_web/api_katalog.php?action=priceList')
         .then(response => response.json())
         .then(data => {
             const tableBody = document.getElementById('dataPriceList');
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_katalog.php?action=priceToping')
+    fetch('http://localhost:3000/apidb/api_web/api_katalog.php?action=priceToping')
         .then(response => response.json())
         .then(data => {
             const tableBody = document.getElementById('dataPriceToping');
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const imageGallery = document.getElementById("imageGallery1");
 
     // Fetch data from the API
-    fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_katalog.php?action=designCake1')
+    fetch('http://localhost:3000/apidb/api_web/api_katalog.php?action=designCake1')
         .then(response => response.json())
         .then(data => {
             // Iterate through the data and create img elements
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const imageGallery = document.getElementById("imageGallery2");
 
     // Fetch data from the API
-    fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_katalog.php?action=designCake2')
+    fetch('http://localhost:3000/apidb/api_web/api_katalog.php?action=designCake2')
         .then(response => response.json())
         .then(data => {
             // Iterate through the data and create img elements

@@ -35,7 +35,21 @@ if (isset($_GET['action'])){
                     http_response_code(500);
                     echo json_encode(array("message" => "Error retrieving data"));
                 }
+                break;
             } 
+
+            if ($action == 'logout') {
+                $query = "UPDATE `user` SET `apiKey` = '' WHERE `id` = 1";
+            
+                if ($koneksi->query($query) === TRUE) {
+                    echo json_encode(array("message" => "User successfully logged out"));
+                } else {
+                    http_response_code(500);
+                    echo json_encode(array("message" => "Error updating user's API key: " . $koneksi->error));
+                }
+            }
+           
+
             break; 
 
         case 'POST' :

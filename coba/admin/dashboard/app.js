@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 10800000);
   }
 
-  fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_dashboard.php?action=imgProfile', {
+  fetch('http://localhost:3000/apidb/api_web/api_dashboard.php?action=imgProfile', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/x-www-form-urlencoded',

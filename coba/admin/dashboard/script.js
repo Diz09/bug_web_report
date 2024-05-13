@@ -1,7 +1,7 @@
 // jumlah pesanan atau transaksi
 document.addEventListener('DOMContentLoaded', function() {
     //api conect
-    fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_dashboard.php?action=transaksi')
+    fetch('http://localhost:3000/apidb/api_web/api_dashboard.php?action=transaksi')
     .then(response => response.json())
     .then(data => {
         // Update the total transactions count on the page
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // pelanggan
 document.addEventListener('DOMContentLoaded', function() {
     //api conect
-    fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_dashboard.php?action=pelanggan')
+    fetch('http://localhost:3000/apidb/api_web/api_dashboard.php?action=pelanggan')
     .then(response => response.json())
     .then(data => {
         // Update the total transactions count on the page
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // pendapatan
 document.addEventListener('DOMContentLoaded', async function() {
     try {
-        const response = await fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_dashboard.php?action=pendapatan');
+        const response = await fetch('http://localhost:3000/apidb/api_web/api_dashboard.php?action=pendapatan');
         const data = await response.json();
 
         console.log('Received data:', data);
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 // tabel transaksi
-fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_dashboard.php?action=tabel_transaksi')
+fetch('http://localhost:3000/apidb/api_web/api_dashboard.php?action=tabel_transaksi')
     .then(response => response.json())
     .then(data => {
         console.log('Received data:', data);
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // menampilkan catatan
 function fetchNotes() {
     // Fetch existing notes
-    fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_dashboard.php?action=note_read')
+    fetch('http://localhost:3000/apidb/api_web/api_dashboard.php?action=note_read')
         .then(function (responseRead) {
             return responseRead.json();
         })
@@ -138,7 +138,7 @@ function fetchNotes() {
 // hapus catatan
 function deleteNote(catatan, noteElement) {
     // Delete note
-    fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_dashboard.php?action=note_delete', {
+    fetch('http://localhost:3000/apidb/api_web/api_dashboard.php?action=note_delete', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -166,7 +166,7 @@ function saveNote() {
     const noteText = textarea.value.trim();
 
     if (noteText !== "") {
-        fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_dashboard.php?action=note_write', {
+        fetch('http://localhost:3000/apidb/api_web/api_dashboard.php?action=note_write', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',

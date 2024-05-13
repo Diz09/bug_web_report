@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         showSpinner();
 
         // Fetch data from the API
-        fetch("https://vioscakedb.000webhostapp.com/apidb/api_web/api_laporan.php")
+        fetch("http://localhost:3000/apidb/api_web/api_laporan.php")
             .then(response => response.json())
             .then(data => {
                 // Hide spinner after data is fetched
@@ -157,7 +157,7 @@ function exportData(type) {
     const fileName = 'exported-sheet.' + type;
 
     // Fetch data from the API
-    fetch("https://vioscakedb.000webhostapp.com/apidb/api_web/api_laporan.php")
+    fetch("http://localhost:3000/apidb/api_web/api_laporan.php")
         .then(response => response.json())
         .then(data => {
             const ws = XLSX.utils.json_to_sheet(data);

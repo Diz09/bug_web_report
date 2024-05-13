@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const idTransaksi = urlParams.get('id');
 
     // Fetch data from the API
-    const apiUrl = 'https://vioscakedb.000webhostapp.com/apidb/api_web/api_pesanan.php?action=rincian';
+    const apiUrl = 'http://localhost:3000/apidb/api_web/api_pesanan.php?action=rincian';
 
     fetch(apiUrl, {
         method: 'POST',
@@ -98,7 +98,7 @@ function formatCurrency(amount) {
 
     if (confirm("Apakah Anda yakin ingin mengkonfirmasi pesanan dengan harga: " + hargaInput + "?")) {
         try {
-        const response = await fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_pesanan.php?action=konfirm', {
+        const response = await fetch('http://localhost:3000/apidb/api_web/api_pesanan.php?action=konfirm', {
             method: 'POST',
             headers: {
             'Content-Type': 'application/x-www-form-urlencoded',

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
-        const response = await fetch('https://vioscakedb.000webhostapp.com/apidb/api_web/api_pesanan.php?action=transaksi');
+        const response = await fetch('http://localhost:3000/apidb/api_web/api_pesanan.php?action=transaksi');
         const data = await response.json();
 
         const orderContainer = document.getElementById("order");
