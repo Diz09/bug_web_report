@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Rincian Pesanan_1_2</name>
+   <tag></tag>
+   <elementGuidId>0ce2f3c5-3c7c-427b-a414-4fc5775eac60</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='order3']/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#order3 > a.btn-rincian</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#order3 >> internal:role=link[name=&quot;Rincian Pesanan&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>376dfa5c-b016-46b8-a4c0-fae30d5a2600</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>rincian_pesanan1.html?id=7</value>
+      <webElementGuid>de015374-e62b-49b0-9b4c-f65e9b208273</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn-rincian</value>
+      <webElementGuid>b1d6833a-0617-43fc-9126-439dd8aa2092</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Rincian Pesanan</value>
+      <webElementGuid>c58d7261-474a-4b43-b3fa-3f1d25d4dee2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;order3&quot;)/a[@class=&quot;btn-rincian&quot;]</value>
+      <webElementGuid>d97c9bfd-64ba-44ad-b26f-fc3063ed1fdd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='order3']/a</value>
+      <webElementGuid>f94bfeeb-b60e-426c-b037-464a49fe7593</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'Rincian Pesanan')])[3]</value>
+      <webElementGuid>ce1c92ba-f036-49f4-b1f4-16fbdf396876</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[3]/following::a[1]</value>
+      <webElementGuid>f9f8251d-1d43-4910-8bc9-c3a17410f74a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Harga Total'])[3]/following::a[1]</value>
+      <webElementGuid>5f0c67d1-8a94-47f9-a84e-ec3ca2489cf9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesanan 8'])[1]/preceding::a[1]</value>
+      <webElementGuid>cc9f3e4b-b191-4664-9b79-8582517448b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Waktu Pesanan'])[4]/preceding::a[1]</value>
+      <webElementGuid>6e26345e-b74f-4dbc-a87b-e5e35916f639</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'rincian_pesanan1.html?id=7')]</value>
+      <webElementGuid>d048af7e-5faa-476a-8559-0016eaf3c91b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/a</value>
+      <webElementGuid>83f20bf9-af84-4d1b-96c7-c7b88d45106d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'rincian_pesanan1.html?id=7' and (text() = 'Rincian Pesanan' or . = 'Rincian Pesanan')]</value>
+      <webElementGuid>6472a0c0-36c2-4137-9e16-8a416f4a1da8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

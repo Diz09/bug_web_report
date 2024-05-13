@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Logout_zoomable_1</name>
+   <tag></tag>
+   <elementGuidId>b12851a8-080a-4c22-8916-4adf0d5df13b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//img[@alt='Image 2']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.image-gallery > img.zoomable</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=img[name=&quot;Image 2&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>8bfa3a6d-3ab3-4747-8549-b06b2d1b9d38</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../img/priceList2.png</value>
+      <webElementGuid>4d40f5fd-9826-44f6-806a-e12c8196b52d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Image 2</value>
+      <webElementGuid>154b59e6-acbe-4811-8645-bb38c50fd013</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>zoomable</value>
+      <webElementGuid>89778acf-e278-4640-b6ef-9dd225a98e8d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/section[@class=&quot;content&quot;]/main[1]/div[@class=&quot;image-gallery&quot;]/img[@class=&quot;zoomable&quot;]</value>
+      <webElementGuid>d8ea6ed7-9108-4941-b83c-23f3092e3555</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Image 2']</value>
+      <webElementGuid>06673f35-ddaf-4abd-9dfc-28da627839b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/img</value>
+      <webElementGuid>3a9ec97d-8b35-4df6-bf8f-7b9d341638b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../img/priceList2.png' and @alt = 'Image 2']</value>
+      <webElementGuid>2e219d1a-49de-4716-acf3-54f1a49e16e9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
