@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesanan</title>
+
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    />
+    
+    <link rel="icon" href="../../company-profile/image/tentang-kami.png" sizes="16x16" type="image/x-icon">
+
+    <link rel="icon" href="../../company-profile/image/tentang-kami.png" sizes="64x64 128x128 256x256" type="image/png">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../logout/logout.css" />
+    <link rel="stylesheet" href="../dashboard/styles.css" />
+    <link rel="stylesheet" href="../pesanan/konfirmasi_pesanan1.css" />
+
+    <!-- script -->
+    <script src="script_konfirm.js" defer></script>
+
+  </head>
+  <body>
+    <section class="sidebar">
+      <a href="#" class="logo">
+        <img src="../img/logo.png" alt="logo" width="40px" />
+        <span class="text">ViosCake</span>
+      </a>
+
+      <ul class="side-menu top">
+        <li class="">
+          <a href="../dashboard/dashboard.html" class="nav-link">
+            <i class="ri-home-3-fill"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="../katalog/katalog.html" class="nav-link">
+            <i class="ri-image-2-fill"></i>
+            <span class="text">Katalog</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="../pesanan/pesanan.html" class="nav-link">
+            <i class="ri-list-unordered"></i>
+            <span class="text">Pesanan</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="../laporan/laporan.html" class="nav-link">
+            <i class="ri-book-2-fill"></i>
+            <span class="text">Laporan</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout" onclick="showLogoutConfirmation()">
+            <i class="fas fa-right-from-bracket"></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content">
+      <nav>
+        <div class="icon-container">
+          <i class="fas fa-bars menu-btn"></i>
+          <a href="pesanan.html">
+            <i class="ri-arrow-left-line"></i>
+          </a>
+          <a 
+          href="#" 
+          class="profile" 
+          id="profil" 
+          style="    
+            position: fixed;
+            right: 40px;
+            top: 27px;">
+          <img src="../dashboard/../img/profile.jpg" alt="" id="pictProfil"/>
+        </a>
+        </div>
+      </nav>
+
+      <!-- ===== ISI KONTEN PESANAN ===== -->
+
+      <main class="container">
+        <div class="card order-card" id="order1">
+          <h3 id="numberPesan">loading..</h3>
+          <div class="data" style="margin-left: 20px;">
+
+            <table style="margin-bottom: 10px;">
+              <style>
+                tr td{
+                  padding-right: 10px;
+                  font-size: 13px;
+                  font-family: sans-serif;
+                }
+              </style>
+              <tr>
+                <td>Nama</td>
+                <td> : </td>
+                <td id="nama1">loading..</td>
+              </tr>
+              <tr>
+                <td>Base cake</td>
+                <td> : </td>
+                <td id="base1">loading..</td>
+              </tr>
+              <tr>
+                <td>Ukuran Cake</td>
+                <td> : </td>
+                <td id="ukuran1">loading..</td>
+              </tr>
+              <tr>
+                <td>Tambahan Toping </td>
+                <td> : </td>
+                <td id="toping1">loading..</td>
+              </tr>
+              <tr>
+                <td>Keterangan Lain</td>
+                <td> : </td>
+                <td id="ket1">loading..</td>
+              </tr>
+              <tr>
+                <td>Tanggal Pesanan</td>
+                <td> : </td>
+                <td id="tanggal1">loading..</td>
+              </tr>
+              <tr>
+                <td>Sub Total</td>
+                <td> : </td>
+                <td id="subT1">loading..</td>
+              </tr>
+            </table>
+
+            <h4 style="font-size: 13px;">Foto Design Cake</h4>
+            <img id="imgPict" width="80px" height="90px" alt="" style="margin-left: 20px;"/>
+
+          </div>
+        </div>
+
+        <div class="card confirm">
+          <h4>Masukkan Konfirmasi Harga</h4>
+          <input
+            type="number"
+            min="0"
+            id="hargaInput"
+            placeholder="Masukkan harga..  Rp 0.00-"
+            required
+          />
+          <button onclick="showConfirmationPopup()">Konfirmasi</button>
+        </div>
+
+        <div class="card k1">
+          <h4 style="display: inline;">Harga Total : </h4>
+          <h5 style="display: inline; margin-left: 30px;" id="total1"></h5>
+        </div>
+      </main>
+    </section>
+
+    <section class="confirmation-popup">
+      <span class="overlay" id="overlay"></span>
+      <div class="modal-box">
+        <h3>Apakah Anda yakin ingin mengkonfirmasi pesanan?</h3>
+        <div class="buttons">
+          <button onclick="konfirmasiPesanan()">Ya</button>
+          <button class="close-btn" id="close-btn" onclick="closeConfirmationPopup()">
+            Batal
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="logout-popup">
+      <span class="overlay"></span>
+      <div class="modal-box">
+        <i class="fas fa-right-from-bracket"></i>
+        <h3>Apakah anda yakin ingin logout?</h3>
+        <div class="buttons">
+          <button onclick="logout()">Logout</button>
+          <button class="close-btn" onclick="closeLogoutPopup()">Batal</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const hargaInput = document.getElementById("hargaInput");
+      
+      hargaInput.addEventListener("input", function() {
+        // Remove leading zeros and non-numeric characters
+        hargaInput.value = hargaInput.value.replace(/^0+|[^0-9]+/g, '');
+      
+        // Ensure the value is a non-negative number
+        const parsedValue = parseInt(hargaInput.value, 10);
+        if (isNaN(parsedValue) || parsedValue < 0) {
+          hargaInput.setCustomValidity("Masukkan angka positif.");
+        } else {
+          hargaInput.setCustomValidity("");
+        }
+      });
+      
+      function konfirmasiPesanan() {
+        // Validate the input before proceeding
+        if (hargaInput.checkValidity()) {
+          const harga = hargaInput.value;
+      
+          if (confirm("Apakah Anda yakin ingin mengkonfirmasi pesanan dengan harga: Rp " + harga + "?")) {
+            // Proceed with further actions
+          } else {
+            alert("Konfirmasi pesanan dibatalkan!");
+          }
+        } else {
+          // Display validation message
+          alert("Masukkan angka positif.");
+        }
+      }
+      </script>      
+
+
+    <script>
+
+      //  Log-out pop-up
+      const logoutPopup = document.querySelector(".logout-popup");
+      const logoutBtn = document.querySelector(".logout");
+      const overlay = document.querySelector(".logout-popup .overlay");
+      const closeBtn = document.querySelector(".logout-popup .close-btn");
+
+      function showLogoutConfirmation() {
+        logoutPopup.classList.add("active");
+      }
+
+      function closeLogoutPopup() {
+        logoutPopup.classList.remove("active");
+      }
+
+      function logout() {
+        alert("Logout berhasil!");
+        window.location.href = "../../login-admin/login.php";
+      }
+    </script>
+
+    <script src="../dashboard/app.js"></script>
+    <script src="pesanan.js"></script>
+  </body>
+</html>
